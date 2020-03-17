@@ -52,7 +52,9 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    max-width: 1400px;
+    margin: 0 auto; }
   .header .nav__logo {
     margin-right: 78px; }
   .header .nav .logo__img {
@@ -97,8 +99,8 @@ ul {
   .header__info {
     color: #fff; }
   .header .info {
-    width: 50%;
-    margin-top: 158px;
+    max-width: 1400px;
+    margin: 158px auto 0;
     color: #fff; }
     .header .info__heading {
       font-weight: 600;
@@ -140,10 +142,19 @@ ul {
   .header .slider {
     position: absolute;
     right: 0;
-    bottom: 0; }
-    .header .slider__img {
-      display: block;
-      border-radius: 25% 0 0; }
+    bottom: 0;
+    width: 50%;
+    height: 85%; }
+    .header .slider__item {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .header .slider_item--1 {
+      background-image: url(../images/slider/slider-img2.png);
+      border-radius: 200px 0 0; }
     .header .slider__intro {
       position: absolute; }
     .header .slider .intro {
