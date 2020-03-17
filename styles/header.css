@@ -320,6 +320,15 @@ ul {
   @media screen and (max-width: 1099px) and (max-width: 559px) {
     .header .slider {
       height: 240px; } }
+    .header .slider__background {
+      width: 100%;
+      height: 100%;
+      border-radius: 200px 0 0;
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(255, 255, 255, 0.1)), color-stop(78%, rgba(62, 61, 61, 0.42)));
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 40%, rgba(62, 61, 61, 0.42) 78%); }
+      @media screen and (max-width: 1099px) {
+        .header .slider__background {
+          border-radius: 0 0 0 50px; } }
     .header .slider__item {
       position: relative;
       width: 100%;
@@ -338,19 +347,34 @@ ul {
     .header .slider .intro {
       line-height: 19px;
       letter-spacing: 3px;
-      color: #003868;
+      color: #fff;
       left: 144px;
       bottom: 48px; }
       @media screen and (max-width: 559px) {
         .header .slider .intro {
-          top: 16px;
-          left: 16px; } }
+          position: relative;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          top: -70px;
+          left: 10px; }
+          .header .slider .intro__heading {
+            margin-bottom: 4px; }
+          .header .slider .intro__text {
+            text-align: center; } }
       .header .slider .intro__heading {
         text-transform: uppercase;
         margin-bottom: 8px; }
     .header .slider .button {
       position: absolute;
-      bottom: 66px;
+      bottom: 48px;
       left: 48px; }
       @media screen and (max-width: 559px) {
         .header .slider .button {
