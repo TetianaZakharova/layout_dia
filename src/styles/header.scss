@@ -18,18 +18,38 @@
     padding: 20px;
   }
 
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__toggle {
+    display: none;
+    z-index: 2;
+
+    @media screen and (max-width: $screen-width-desktop) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
   &__nav {
     display: flex;
     flex-direction: row;
     text-transform: uppercase;
     max-width: 1400px;
     margin: 0 auto;
+
+    @media screen and (max-width: $screen-width-desktop) {
+      margin: 0;
+    }
   }
 
   .nav {
     position: relative;
     &__logo {
       margin-right: 78px;
+      z-index: 3;
     }
 
     .logo__img {
@@ -48,7 +68,6 @@
       @media screen and (max-width: $screen-width-desktop) {
         display: none;
       }
-
     }
 
     &__item {
@@ -83,7 +102,6 @@
 
   &__info {
     color: #fff;
-
   }
 
   .info {
@@ -194,8 +212,6 @@
       @media screen and (max-width: $screen-width-small) {
         top: 16px;
         left: 16px;
-        color: #008aff;
-
       }
 
       &__heading {

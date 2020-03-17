@@ -1,71 +1,60 @@
 @import "./vars.scss";
 
 .toggle {
-  display: none;
-
-  @media screen and (max-width: $screen-width-desktop) {
-    display: flex;
-    position: absolute;
-    right: 0;
-    top: 13px;
+  &__mobile {
+    display: none;
   }
 
   &__menu {
     opacity: 0;
     position: absolute;
+    top: -100%;
   }
 
   &__btn {
     display: block;
     position: relative;
+    top: 8px;
     width: 40px;
     height: 30px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 3;
   }
 
-  // &__item {
-  //   margin-bottom: 32px;
-  // }
+  &__list {
+    position: absolute;
+    top: 165px;
+    left: 20%;
+  }
 
-  // &__link {
-  //   color: white;
-  //   font-size: 22px;
-  //   line-height: 22px;
-  //   letter-spacing: 2px;
-  //   text-transform: uppercase;
-  // }
+  &__item {
+    margin-bottom: 40px;
+  }
 
-  // &__contact {
-  //   margin-top: 16px;
-  //   display: flex;
-  //   flex-direction: column;
-  //   position: absolute;
-  //   top: 460px;
-  //   left: 20px;
-  //   text-transform: uppercase;
+  &__link {
+    color: white;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
 
-  //   &::after {
-  //     content: "";
-  //     width: 111px;
-  //     border: 1px solid #fff;
-  //     margin-top: 8px;
-  //   }
-  // }
+  &__menu:checked ~ .toggle__mobile {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #008aff;
+    border-radius: 0 0 0 50px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: opacity 0.3s, transform 0.5s;
+  }
 
-  // &__menu:checked ~ .toggle__mobile {
-  //   display: block;
-  //   position: absolute;
-  //   height: 100%;
-  //   width: 100%;
-  //   background-color: #0075ff;
-  //   top: 0;
-  //   left: 0;
-  //   transition: opacity 0.3s, transform 0.5s;
-  // }
-  // &__menu:checked ~ .header__heading {
-  //   display: none;
-  // }
+  &__menu:checked ~ .info {
+    display: none;
+  }
 
   &__span {
     display: block;
@@ -102,18 +91,4 @@
     top: 0;
     transform: rotate(90deg);
   }
-
-  // &__list {
-  //   position: absolute;
-  //   top: 120px;
-  //   left: 20px;
-  // }
-
-  // .contact__info {
-  //   font-size: 12px;
-  //   line-height: 16px;
-  //   letter-spacing: 2px;
-  //   color: #fff;
-  //   margin-top: 16px;
-  // }
 }
