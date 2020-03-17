@@ -1,7 +1,10 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "reset";
+@import "header";
+@import "./vars.scss";
 
-body {
+.body {
   background: $c-gray;
 }

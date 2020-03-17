@@ -1,0 +1,14 @@
+$logo-width: 45px;
+$logo-height: 26px;
+
+%slider-arrows {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  transition: background-color 0.5s;
+}
