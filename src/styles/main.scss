@@ -4,7 +4,9 @@
 @import "reset";
 @import "header";
 @import "./vars.scss";
+@import "./toggle.scss";
 
 .body {
   background: $c-gray;
+
 }

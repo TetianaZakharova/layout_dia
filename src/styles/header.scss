@@ -1,11 +1,22 @@
 @import "./reset.scss";
 @import "./vars.scss";
+@import "./toggle.scss";
 
 .header {
+  min-width: 320px;
   position: relative;
   background: #008aff;
   border-radius: 0 0 0 200px;
   padding: 49px 157px;
+
+  @media screen and (max-width: $screen-width-notebook) {
+    padding: 49px;
+    border-radius: 0 0 0 50px;
+  }
+
+  @media screen and (max-width: $screen-width-small) {
+    padding: 20px;
+  }
 
   &__nav {
     display: flex;
@@ -16,6 +27,7 @@
   }
 
   .nav {
+    position: relative;
     &__logo {
       margin-right: 78px;
     }
@@ -32,6 +44,11 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+
+      @media screen and (max-width: $screen-width-desktop) {
+        display: none;
+      }
+
     }
 
     &__item {
@@ -66,12 +83,21 @@
 
   &__info {
     color: #fff;
+
   }
+
   .info {
-    // width: 50%;
     max-width: 1400px;
     margin: 158px auto 0;
     color: #fff;
+
+    @media screen and (max-width: $screen-width-notebook) {
+      max-width: 1400px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 56px auto 0;
+    }
 
     &__heading {
       font-weight: 600;
@@ -79,6 +105,10 @@
       line-height: 68px;
       letter-spacing: -2px;
       color: #fff;
+
+      @media screen and (max-width: $screen-width-small) {
+        font-size: 48px;
+      }
     }
 
     &__text {
@@ -104,6 +134,10 @@
       margin: 83px 0 205px;
       transition: color, background-color, 0.5s;
 
+      @media screen and (max-width: $screen-width-notebook) {
+        margin: 18px auto 56px;
+      }
+
       &:hover {
         color: #ff9c8e;
         background-color: #fff;
@@ -111,13 +145,22 @@
       }
     }
   }
-
   .slider {
     position: absolute;
     right: 0;
     bottom: 0;
     width: 50%;
     height: 85%;
+
+    @media screen and (max-width: $screen-width-notebook) {
+      position: relative;
+      width: 100%;
+      height: 350px;
+
+      @media screen and (max-width: $screen-width-small) {
+        height: 240px;
+      }
+    }
 
     &__item {
       position: relative;
@@ -131,14 +174,11 @@
     &_item--1 {
       background-image: url(../images/slider/slider-img2.png);
       border-radius: 200px 0 0;
-    }
 
-    // &__img {
-    //   width: 100%;
-    //   height: 100%;
-    //   display: block;
-    //   border-radius: 25% 0 0;
-    // }
+      @media screen and (max-width: $screen-width-notebook) {
+        border-radius: 0 0 0 50px;
+      }
+    }
 
     &__intro {
       position: absolute;
@@ -147,9 +187,16 @@
     .intro {
       line-height: 19px;
       letter-spacing: 3px;
-      color: #fff;
+      color: #003868;
       left: 144px;
       bottom: 48px;
+
+      @media screen and (max-width: $screen-width-small) {
+        top: 16px;
+        left: 16px;
+        color: #008aff;
+
+      }
 
       &__heading {
         text-transform: uppercase;
@@ -161,6 +208,24 @@
       position: absolute;
       bottom: 66px;
       left: 48px;
+
+      @media screen and (max-width: $screen-width-small) {
+        display: flex;
+        justify-content: space-between;
+        position: static;
+
+        &__left {
+          position: absolute;
+          left: 8px;
+          top: 50%;
+        }
+
+        &__right {
+          position: absolute;
+          right: 8px;
+          top: 50%;
+        }
+      }
 
       &__left {
         @extend %slider-arrows;
