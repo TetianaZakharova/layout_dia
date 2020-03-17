@@ -8,51 +8,86 @@
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s; }
 
-.toggle {
+.toggle__mobile {
   display: none; }
-  @media screen and (max-width: 1299px) {
-    .toggle {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      position: absolute;
-      right: 0;
-      top: 13px; } }
-  .toggle__menu {
-    opacity: 0;
-    position: absolute; }
-  .toggle__btn {
-    display: block;
-    position: relative;
-    width: 40px;
-    height: 30px;
-    cursor: pointer;
-    z-index: 1; }
-  .toggle__span {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: #fff;
-    border-radius: 4px;
-    -webkit-transition-duration: 0.2s;
-            transition-duration: 0.2s; }
-  .toggle__span::before {
-    content: "";
-    top: -8px; }
-  .toggle__span::after {
-    content: "";
-    top: 8px; }
-  .toggle__menu:checked ~ .toggle__btn > .toggle__span {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg); }
-  .toggle__menu:checked ~ .toggle__btn > .toggle__span::before {
-    top: 0;
-    -webkit-transform: rotate(0);
-            transform: rotate(0); }
-  .toggle__menu:checked ~ .toggle__btn > .toggle__span::after {
-    top: 0;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
+
+.toggle__menu {
+  opacity: 0;
+  position: absolute;
+  top: -100%; }
+
+.toggle__btn {
+  display: block;
+  position: relative;
+  top: 8px;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 3; }
+
+.toggle__list {
+  position: absolute;
+  top: 165px;
+  left: 20%; }
+
+.toggle__item {
+  margin-bottom: 40px; }
+
+.toggle__link {
+  color: white;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.toggle__menu:checked ~ .toggle__mobile {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #008aff;
+  border-radius: 0 0 0 50px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.5s;
+  transition: opacity 0.3s, -webkit-transform 0.5s;
+  transition: opacity 0.3s, transform 0.5s;
+  transition: opacity 0.3s, transform 0.5s, -webkit-transform 0.5s; }
+
+.toggle__menu:checked ~ .info {
+  display: none; }
+
+.toggle__span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s; }
+
+.toggle__span::before {
+  content: "";
+  top: -8px; }
+
+.toggle__span::after {
+  content: "";
+  top: 8px; }
+
+.toggle__menu:checked ~ .toggle__btn > .toggle__span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.toggle__menu:checked ~ .toggle__btn > .toggle__span::before {
+  top: 0;
+  -webkit-transform: rotate(0);
+          transform: rotate(0); }
+
+.toggle__menu:checked ~ .toggle__btn > .toggle__span::after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
 
 /*# sourceMappingURL=toggle.css.map */
