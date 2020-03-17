@@ -29,6 +29,22 @@
 
   &__item {
     margin-bottom: 40px;
+    &:last-child {
+      position: relative;
+      margin-top: 160px;
+      margin-bottom: 0;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -12px;
+        height: 2px;
+        border-radius: 4px;
+        background: #ff9c8e;
+        width: 57%;
+      }
+    }
   }
 
   &__link {
