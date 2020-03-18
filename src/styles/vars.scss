@@ -1,5 +1,25 @@
+$item-themes-color:
+  (blue: #56ccf2,
+  orange: #fcc91d,
+  green: #15d850,
+  purple: #f36363);
+
 $logo-width: 45px;
 $logo-height: 26px;
+
+%h2-styles {
+  font-weight: 600;
+  font-size: 32px;
+  color: #253757;
+}
+
+%info-text-process-servises {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6c788b;
+}
 
 %slider-arrows {
   width: 32px;
