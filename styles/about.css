@@ -5,6 +5,9 @@
 
 .about {
   padding: 148px 0; }
+  @media screen and (max-width: 1099px) {
+    .about {
+      padding: 50px 0; } }
   .about__info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -16,9 +19,12 @@
     margin: auto;
     width: 50%;
     max-width: 1400px; }
+    @media screen and (max-width: 1099px) {
+      .about__info {
+        width: 90%; } }
   .about__heading {
     line-height: 1.5;
-    margin-bottom: 16px; }
+    margin: 0 0 16px; }
   .about__text {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
@@ -26,5 +32,8 @@
     line-height: 1.5;
     color: #6c788b;
     margin: 0; }
+    @media screen and (max-width: 559px) {
+      .about__text {
+        font-size: 16px; } }
 
 /*# sourceMappingURL=about.css.map */
