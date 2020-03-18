@@ -1,0 +1,30 @@
+.about__heading {
+  font-weight: 600;
+  font-size: 32px;
+  color: #253757; }
+
+.about {
+  padding: 148px 0; }
+  .about__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    width: 50%;
+    max-width: 1400px; }
+  .about__heading {
+    line-height: 1.5;
+    margin-bottom: 16px; }
+  .about__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #6c788b;
+    margin: 0; }
+
+/*# sourceMappingURL=about.css.map */

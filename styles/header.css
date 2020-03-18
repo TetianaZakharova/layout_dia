@@ -1,5 +1,6 @@
 body {
-  min-width: 320px; }
+  min-width: 320px;
+  background-color: #e5e5e5; }
 
 html,
 body,
@@ -207,7 +208,8 @@ ul {
             flex-direction: row;
     text-transform: uppercase;
     max-width: 1400px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 100%; }
     @media screen and (max-width: 1299px) {
       .header__nav {
         margin: 0; } }
@@ -324,15 +326,15 @@ ul {
     right: 0;
     bottom: 0;
     width: 50%;
-    height: 85%; }
+    height: 80%; }
     @media screen and (max-width: 1099px) {
       .header .slider {
         position: relative;
         width: 100%;
-        height: 350px; } }
-  @media screen and (max-width: 1099px) and (max-width: 559px) {
-    .header .slider {
-      height: 240px; } }
+        height: 250px; } }
+    @media screen and (max-width: 559px) {
+      .header .slider {
+        height: 240px; } }
     .header .slider__background {
       width: 100%;
       height: 100%;
