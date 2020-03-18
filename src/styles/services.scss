@@ -4,6 +4,14 @@
   background-color: #fff;
   padding: 128px 150px;
 
+  @media screen and (max-width: $screen-width-notebook) {
+    padding: 50px;
+  }
+
+  @media screen and (max-width: $screen-width-medium) {
+    padding: 50px 0;
+  }
+
   &__container {
     max-width: 1400px;
     margin: 0 auto;
@@ -16,6 +24,10 @@
     color: #253757;
     text-align: center;
     margin: 0;
+
+    @media screen and (max-width: $screen-width-small) {
+      font-size: 42px;
+    }
   }
 
   &__cards {
@@ -23,6 +35,11 @@
     grid-template-columns: repeat(3, 264px);
     justify-content: space-between;
     margin: 64px auto 0;
+
+    @media screen and (max-width: $screen-width-medium) {
+      grid-template-columns: 1fr;
+      row-gap: 48px;
+    }
   }
 
   .card {
@@ -36,8 +53,18 @@
       border-radius: 25px;
       transition: transform 0.5s;
 
+      @media screen and (max-width: $screen-width-medium) {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+      }
+
       &:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
+
+        @media screen and (max-width: $screen-width-medium) {
+          transform: scale(1);
+        }
       }
     }
 
@@ -47,10 +74,20 @@
       line-height: 140%;
       color: #253757;
       margin: 40px 0 16px;
+
+      @media screen and (max-width: $screen-width-medium) {
+        margin: 24px 0;
+      }
+
     }
 
     &__text {
       @extend %info-text-process-servises;
+
+      @media screen and (max-width: $screen-width-medium) {
+        margin: 0;
+        padding: 0 16px;
+      }
     }
   }
 }

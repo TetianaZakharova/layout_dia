@@ -3,6 +3,10 @@
 .process {
   padding: 250px 150px;
 
+  @media screen and (max-width: $screen-width-notebook) {
+    padding: 50px;
+  }
+
   &__container {
     max-width: 1400px;
     margin: 0 auto;
@@ -12,6 +16,11 @@
 
   &__info {
     width: 30%;
+
+    @media screen and (max-width: $screen-width-notebook) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__subtitle {
@@ -37,7 +46,7 @@
     right: 0;
     top: 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 264px);
     grid-gap: 30px;
     font-weight: 600;
     font-size: 13px;
@@ -45,13 +54,27 @@
 
     &__item:nth-child(even) {
       transform: translateY(-50%);
+
+      @media screen and (max-width: $screen-width-notebook) {
+        transform: translateY(0);
+      }
+    }
+
+    @media screen and (max-width: $screen-width-notebook) {
+      position: relative;
+      justify-content: center;
+      line-height: 1.5;
+      margin-top: 50px;
+
+      @media screen and (max-width: $screen-width-process) {
+        grid-template-columns: 264px;
+      }
     }
   }
 
   .item {
     padding: 32px;
-    width: 249px;
-    height: 249px;
+    height: 264px;
     background: #fff;
     box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
     border-radius: 24px;

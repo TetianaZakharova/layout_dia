@@ -1,3 +1,9 @@
+$screen-width-desktop: 1299px;
+$screen-width-notebook: 1099px;
+$screen-width-medium: 939px;
+$screen-width-process: 619px;
+$screen-width-small: 559px;
+
 $item-themes-color:
   (blue: #56ccf2,
   orange: #fcc91d,
@@ -32,10 +38,6 @@ $logo-height: 26px;
   outline: none;
   transition: background-color 0.5s;
 }
-
-$screen-width-desktop: 1299px;
-$screen-width-notebook: 1099px;
-$screen-width-small: 559px;
 
 %toggle-span-style {
   display: block;
