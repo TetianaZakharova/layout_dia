@@ -168,7 +168,6 @@ ul {
           transform: rotate(90deg); }
 
 .header {
-  min-width: 320px;
   position: relative;
   background: #008aff;
   border-radius: 0 0 0 200px;
@@ -257,7 +256,8 @@ ul {
       bottom: -8px;
       left: 0;
       -webkit-transition: width 0.3s;
-      transition: width 0.3s; }
+      transition: width 0.3s;
+      letter-spacing: normal; }
     .header .nav__link:hover:after {
       width: 100%; }
   .header__info {
