@@ -1,7 +1,7 @@
 @import "./vars.scss";
 
 .process {
-  padding: 250px 150px;
+  padding: 200px 150px;
 
   @media screen and (max-width: $screen-width-notebook) {
     padding: 18px;
@@ -23,9 +23,7 @@
   }
 
   &__subtitle {
-    line-height: 19px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+    @extend %subtitle-styles;
     color: #c0cdd7;
   }
 
@@ -50,6 +48,7 @@
     font-weight: 600;
     font-size: 13px;
     line-height: 1.5;
+    z-index: 2;
 
     &__item:nth-child(even) {
       transform: translateY(-50%);

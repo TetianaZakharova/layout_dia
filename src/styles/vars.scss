@@ -1,4 +1,5 @@
 $screen-width-desktop: 1299px;
+$screen-width-test: 1179px;
 $screen-width-notebook: 1099px;
 $screen-width-medium: 939px;
 $screen-width-process: 619px;
@@ -17,6 +18,12 @@ $logo-height: 26px;
   font-weight: 600;
   font-size: 32px;
   color: #253757;
+}
+
+%subtitle-styles {
+  line-height: 19px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 %info-text-process-servises {

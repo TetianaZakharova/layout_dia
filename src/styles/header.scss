@@ -3,7 +3,6 @@
 @import "./toggle.scss";
 
 .header {
-  min-width: 320px;
   position: relative;
   background: #008aff;
   border-radius: 0 0 0 200px;
@@ -91,6 +90,7 @@
         bottom: -8px;
         left: 0;
         transition: width 0.3s;
+        letter-spacing: normal;
       }
 
       &:hover {

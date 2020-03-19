@@ -1,0 +1,116 @@
+@import "./vars.scss";
+
+.approach {
+  &__container {
+    margin: 0 auto 0 10%;
+    background-color: #ff9f8e;
+    border-radius: 200px 0 0 200px;
+    position: relative;
+
+    @media screen and (max-width: $screen-width-medium) {
+      margin: 0 auto;
+      border-radius: 25px 0 0 25px;
+    }
+  }
+
+  .info {
+    width: 30%;
+    padding: 8% 15%;
+
+    @media screen and (max-width: $screen-width-notebook) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: $screen-width-medium) {
+      padding: 8%;
+      width: 80%;
+    }
+
+    &__subtitle {
+      @extend %subtitle-styles;
+      color: #fff;
+    }
+
+    &__heading {
+      @extend %h2-styles;
+      line-height: 1.5;
+      color: #fff;
+      margin: 16px 0 32px;
+    }
+  }
+  .list {
+
+    &__approach-item {
+      font-family: "Open Sans", sans-serif;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #fff;
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      grid-gap: 34px;
+      margin-bottom: 64px;
+      align-items: center;
+
+      @media screen and (max-width: $screen-width-notebook) {
+        margin-bottom: 32px;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        width: 64px;
+        height: 64px;
+      }
+    }
+
+    .approach-item--1::before {
+      content: "";
+      background-image: url(../images/features/features-item-icon-1.svg);
+    }
+
+    .approach-item--2::before {
+      content: "";
+      background-image: url(../images/features/features-item-icon-2.svg);
+    }
+
+    .approach-item--3 {
+      margin-bottom: 0;
+
+      &::before {
+        content: "";
+        background-image: url(../images/features/features-item-icon-3.svg);
+      }
+    }
+  }
+
+  .slide {
+    background-image: url(../images/features/features-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 200px 0 0;
+    height: 70%;
+    width: 45%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    @media screen and (max-width: $screen-width-notebook) {
+      position: relative;
+      height: 250px;
+      width: 100%;
+      border-radius: 0 0 0 200px;
+    }
+
+    @media screen and (max-width: $screen-width-medium) {
+      border-radius: 0 0 0 25px;
+    }
+  }
+}
+
+.test.info__heading {
+  @media screen and (max-width: $screen-width-small) {
+    font-size: 24px;
+  }
+}

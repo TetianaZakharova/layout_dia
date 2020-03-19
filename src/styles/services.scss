@@ -54,7 +54,8 @@
       transition: transform 0.5s;
 
       @media screen and (max-width: $screen-width-medium) {
-        width: 90%;
+        // width: 90%;
+        width: 50%;
         height: auto;
       }
 
@@ -85,7 +86,7 @@
 
       @media screen and (max-width: $screen-width-medium) {
         margin: 0;
-        padding: 0 16px;
+        width: 90%;
       }
     }
   }
