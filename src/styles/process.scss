@@ -4,14 +4,13 @@
   padding: 250px 150px;
 
   @media screen and (max-width: $screen-width-notebook) {
-    padding: 50px;
+    padding: 18px;
   }
 
   &__container {
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
-
   }
 
   &__info {

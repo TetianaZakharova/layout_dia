@@ -54,9 +54,8 @@
       transition: transform 0.5s;
 
       @media screen and (max-width: $screen-width-medium) {
-        width: 100%;
+        width: 90%;
         height: auto;
-        border-radius: 0;
       }
 
       &:hover {
