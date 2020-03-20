@@ -1,8 +1,3 @@
-.approach .info__heading {
-  font-weight: 600;
-  font-size: 32px;
-  color: #253757; }
-
 .approach .info__subtitle {
   line-height: 19px;
   letter-spacing: 3px;
@@ -28,12 +23,17 @@
     .approach .info {
       padding: 8%;
       width: 80%; } }
-  .approach .info__subtitle {
-    color: #fff; }
   .approach .info__heading {
+    font-weight: 600;
+    font-size: 32px;
     line-height: 1.5;
     color: #fff;
     margin: 16px 0 32px; }
+    @media screen and (max-width: 559px) {
+      .approach .info__heading {
+        font-size: 24px; } }
+  .approach .info__subtitle {
+    color: #fff; }
 
 .approach .list__approach-item {
   font-family: "Open Sans", sans-serif;
@@ -51,6 +51,10 @@
   @media screen and (max-width: 1099px) {
     .approach .list__approach-item {
       margin-bottom: 32px; } }
+  @media screen and (max-width: 559px) {
+    .approach .list__approach-item {
+      font-size: 13px;
+      margin-bottom: 16px; } }
   .approach .list__approach-item::before {
     content: "";
     display: block;
@@ -91,9 +95,5 @@
   @media screen and (max-width: 939px) {
     .approach .slide {
       border-radius: 0 0 0 25px; } }
-
-@media screen and (max-width: 559px) {
-  .test.info__heading {
-    font-size: 24px; } }
 
 /*# sourceMappingURL=approach.css.map */

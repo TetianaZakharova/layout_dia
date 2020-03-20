@@ -68,7 +68,7 @@ a {
 ul {
   list-style-type: none; }
 
-.about__heading, .process__heading, .approach .info__heading, .testimonials__heading {
+.about__heading, .process__heading, .testimonials__heading {
   font-weight: 600;
   font-size: 32px;
   color: #253757; }
@@ -107,7 +107,7 @@ ul {
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s; }
 
-.about__heading, .process__heading, .approach .info__heading, .testimonials__heading {
+.about__heading, .process__heading, .testimonials__heading {
   font-weight: 600;
   font-size: 32px;
   color: #253757; }
@@ -494,7 +494,7 @@ ul {
           background-color: #ff9c8e;
           cursor: pointer; }
 
-.about__heading, .process__heading, .approach .info__heading, .testimonials__heading {
+.about__heading, .process__heading, .testimonials__heading {
   font-weight: 600;
   font-size: 32px;
   color: #253757; }
@@ -533,7 +533,7 @@ ul {
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s; }
 
-.about__heading, .process__heading, .approach .info__heading, .testimonials__heading {
+.about__heading, .process__heading, .testimonials__heading {
   font-weight: 600;
   font-size: 32px;
   color: #253757; }
@@ -667,7 +667,7 @@ ul {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg); }
 
-.about__heading, .process__heading, .approach .info__heading, .testimonials__heading {
+.about__heading, .process__heading, .testimonials__heading {
   font-weight: 600;
   font-size: 32px;
   color: #253757; }
@@ -739,7 +739,7 @@ ul {
       .about__text {
         font-size: 16px; } }
 
-.about__heading, .process__heading, .approach .info__heading, .testimonials__heading {
+.about__heading, .process__heading, .testimonials__heading {
   font-weight: 600;
   font-size: 32px;
   color: #253757; }
@@ -855,7 +855,7 @@ ul {
         margin: 0;
         width: 90%; } }
 
-.about__heading, .process__heading, .approach .info__heading, .testimonials__heading {
+.about__heading, .process__heading, .testimonials__heading {
   font-weight: 600;
   font-size: 32px;
   color: #253757; }
@@ -1042,7 +1042,7 @@ ul {
 .item__theme--purple .item__link:hover {
   color: #f36363; }
 
-.about__heading, .process__heading, .approach .info__heading, .testimonials__heading {
+.about__heading, .process__heading, .testimonials__heading {
   font-weight: 600;
   font-size: 32px;
   color: #253757; }
@@ -1101,12 +1101,17 @@ ul {
     .approach .info {
       padding: 8%;
       width: 80%; } }
-  .approach .info__subtitle {
-    color: #fff; }
   .approach .info__heading {
+    font-weight: 600;
+    font-size: 32px;
     line-height: 1.5;
     color: #fff;
     margin: 16px 0 32px; }
+    @media screen and (max-width: 559px) {
+      .approach .info__heading {
+        font-size: 24px; } }
+  .approach .info__subtitle {
+    color: #fff; }
 
 .approach .list__approach-item {
   font-family: "Open Sans", sans-serif;
@@ -1124,6 +1129,10 @@ ul {
   @media screen and (max-width: 1099px) {
     .approach .list__approach-item {
       margin-bottom: 32px; } }
+  @media screen and (max-width: 559px) {
+    .approach .list__approach-item {
+      font-size: 13px;
+      margin-bottom: 16px; } }
   .approach .list__approach-item::before {
     content: "";
     display: block;
@@ -1165,11 +1174,7 @@ ul {
     .approach .slide {
       border-radius: 0 0 0 25px; } }
 
-@media screen and (max-width: 559px) {
-  .test.info__heading {
-    font-size: 24px; } }
-
-.about__heading, .process__heading, .approach .info__heading, .testimonials__heading {
+.about__heading, .process__heading, .testimonials__heading {
   font-weight: 600;
   font-size: 32px;
   color: #253757; }
