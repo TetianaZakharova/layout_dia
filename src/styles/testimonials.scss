@@ -32,8 +32,8 @@
     justify-content: space-between;
     grid-gap: 30px;
 
-    @media screen and (max-width: $screen-width-medium) {
-      grid-template-columns: repeat(1, 70%);
+    @media screen and (max-width: $screen-width-notebook) {
+      grid-template-columns: repeat(1, 50%);
       grid-row-gap: 30px;
       justify-content: center;
     }

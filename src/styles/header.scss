@@ -151,7 +151,8 @@
       background-color: #ff9c8e;
       border-radius: 64px;
       margin: 83px 0 205px;
-      transition: color, background-color, 0.5s;
+      transition: color, background-color, 0.3s;
+      letter-spacing: normal;
 
       @media screen and (max-width: $screen-width-notebook) {
         margin: 18px auto 56px;
