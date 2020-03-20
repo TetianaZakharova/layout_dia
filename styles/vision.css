@@ -1,0 +1,158 @@
+.vision {
+  background-color: #fff;
+  padding: 128px 150px; }
+  @media screen and (max-width: 619px) {
+    .vision {
+      padding: 50px; } }
+  .vision__container {
+    max-width: 1400px;
+    margin: 0 auto; }
+  .vision .info {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin: 0 auto; }
+    .vision .info__title {
+      font-weight: 600;
+      font-size: 52px;
+      color: #253757;
+      line-height: 1.5; }
+      @media screen and (max-width: 939px) {
+        .vision .info__title {
+          font-size: 32px; } }
+    .vision .info__text {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1.5;
+      color: #6c788b; }
+    .vision .info__link {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin: 0 auto;
+      width: 226px;
+      height: 56px;
+      background: #ff9c8e;
+      border-radius: 64px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: normal;
+      -webkit-transition: color, background-color, 0.3s;
+      transition: color, background-color, 0.3s; }
+      .vision .info__link:hover {
+        color: #ff9c8e;
+        background-color: #fff;
+        border: 3px solid #ff9c8e;
+        cursor: pointer; }
+  .vision .elips {
+    position: relative;
+    opacity: 0.5;
+    border-radius: 500px; }
+    @media screen and (max-width: 619px) {
+      .vision .elips {
+        display: none; } }
+    .vision .elips__item {
+      position: absolute;
+      border-radius: 500px;
+      -webkit-transform: rotate(-65deg);
+              transform: rotate(-65deg);
+      -webkit-transition: -webkit-transform 0.3s;
+      transition: -webkit-transform 0.3s;
+      transition: transform 0.3s;
+      transition: transform 0.3s, -webkit-transform 0.3s; }
+      .vision .elips__item:hover {
+        -webkit-transform: scale(1.2) rotate(-65deg);
+                transform: scale(1.2) rotate(-65deg); }
+      @media screen and (max-width: 939px) {
+        .vision .elips__item--large {
+          display: none; } }
+      .vision .elips__item--extrasmall {
+        width: 45px;
+        height: 18px; }
+      .vision .elips__item:first-child {
+        right: -104px;
+        top: -393px; }
+      .vision .elips__item:nth-child(2) {
+        right: 0;
+        bottom: 0; }
+      .vision .elips__item:nth-child(3) {
+        left: 0;
+        top: 0; }
+      .vision .elips__item:nth-child(4) {
+        left: -30px;
+        top: -350px; }
+      .vision .elips__item:nth-child(5) {
+        left: -150px;
+        top: -131px; }
+      .vision .elips__item:nth-child(6) {
+        right: -153px;
+        top: -180px; }
+      .vision .elips__item:nth-child(7) {
+        left: -70px;
+        top: 33px; }
+      .vision .elips__item:nth-child(8) {
+        right: 50px;
+        bottom: 320px; }
+      .vision .elips__item:nth-child(9) {
+        right: -55px;
+        top: 1px; }
+      .vision .elips__item:nth-child(10) {
+        left: 180px;
+        top: -380px; }
+      .vision .elips__item:nth-child(11) {
+        left: 220px;
+        top: 20px; }
+      .vision .elips__item:nth-child(12) {
+        right: 280px;
+        top: 22px; }
+
+.elips__item--blue {
+  border: 5px solid #56ccf2; }
+
+.elips__item--orange {
+  border: 5px solid #fcc91d; }
+
+.elips__item--green {
+  border: 5px solid #15d850; }
+
+.elips__item--purple {
+  border: 5px solid #f36363; }
+
+.elips__item--large {
+  width: 146px; }
+
+.elips__item--medium {
+  width: 93px; }
+
+.elips__item--small {
+  width: 85px; }
+
+.elips__item--large {
+  height: 56px; }
+
+.elips__item--medium {
+  height: 37px; }
+
+.elips__item--small {
+  height: 34px; }
+
+/*# sourceMappingURL=vision.css.map */

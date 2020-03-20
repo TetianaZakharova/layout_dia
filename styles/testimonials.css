@@ -30,9 +30,9 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     grid-gap: 30px; }
-    @media screen and (max-width: 939px) {
+    @media screen and (max-width: 1099px) {
       .testimonials .base {
-        grid-template-columns: repeat(1, 70%);
+        grid-template-columns: repeat(1, 50%);
         grid-row-gap: 30px;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
