@@ -1553,6 +1553,260 @@ ul {
 .elips__item--small {
   height: 34px; }
 
+.about__heading, .process__heading, .testimonials__heading {
+  font-weight: 600;
+  font-size: 32px;
+  color: #253757; }
+
+.process__subtitle, .approach .info__subtitle, .testimonials__subtitle, .testimonials .person__company {
+  line-height: 19px;
+  letter-spacing: 3px;
+  text-transform: uppercase; }
+
+.services .card__text, .process__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6c788b; }
+
+.header .slider .button__left, .header .slider .button__right {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s; }
+
+.toggle__span::before, .toggle__span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
+
+.footer {
+  background-color: #fff; }
+  .footer__container {
+    padding: 128px 150px 84px;
+    max-width: 1400px;
+    margin: 0 auto; }
+    @media screen and (max-width: 1099px) {
+      .footer__container {
+        padding: 50px; } }
+  .footer__wrap {
+    background: #008aff;
+    border-radius: 0 200px 0 0; }
+    @media screen and (max-width: 1099px) {
+      .footer__wrap {
+        border-radius: 0 25px 0 0; } }
+  @media screen and (max-width: 619px) {
+    .footer__nav {
+      position: relative; } }
+  .footer .communicate {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    @media screen and (max-width: 939px) {
+      .footer .communicate {
+        grid-template-columns: 1fr;
+        grid-row-gap: 50px; } }
+    .footer .communicate .title {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 1.5;
+      color: #fff;
+      margin: 0; }
+    .footer .communicate .form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-top: 16px; }
+      .footer .communicate .form__input {
+        width: 80%;
+        height: 32px;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        color: #fff;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 22px;
+        padding: 48px 0 32px;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: opacity 0.2s;
+        transition: opacity 0.2s; }
+        .footer .communicate .form__input::-webkit-input-placeholder {
+          color: #fff; }
+        .footer .communicate .form__input::-moz-placeholder {
+          color: #fff; }
+        .footer .communicate .form__input:-ms-input-placeholder {
+          color: #fff; }
+        .footer .communicate .form__input::-ms-input-placeholder {
+          color: #fff; }
+        .footer .communicate .form__input::placeholder {
+          color: #fff; }
+        .footer .communicate .form__input:focus {
+          -webkit-box-shadow: 8px 8px 8px rgba(49, 59, 75, 0.19);
+                  box-shadow: 8px 8px 8px rgba(49, 59, 75, 0.19); }
+        .footer .communicate .form__input:hover {
+          opacity: 1; }
+      .footer .communicate .form__button {
+        width: 226px;
+        padding: 16px 0;
+        text-align: center;
+        background: #ff7e6c;
+        border-radius: 64px;
+        outline: none;
+        border: transparent;
+        color: #fff;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 22px;
+        margin-top: 80px;
+        -webkit-transition: color, background-color, 0.2s;
+        transition: color, background-color, 0.2s; }
+        @media screen and (max-width: 939px) {
+          .footer .communicate .form__button {
+            margin-top: 32px; } }
+        .footer .communicate .form__button:hover {
+          color: #ff9c8e;
+          background-color: #fff;
+          cursor: pointer; }
+    .footer .communicate .contacts {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      color: #fff;
+      margin-bottom: 128px; }
+      @media screen and (max-width: 619px) {
+        .footer .communicate .contacts {
+          margin-bottom: 0; } }
+      .footer .communicate .contacts__call {
+        margin-top: 56px; }
+        @media screen and (max-width: 559px) {
+          .footer .communicate .contacts__call {
+            margin-top: 40px; } }
+    .footer .communicate .sublilte {
+      line-height: 19px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      opacity: 0.5;
+      margin: 0; }
+    .footer .communicate .contact {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1.5;
+      margin: 8px 0 48px; }
+      .footer .communicate .contact__link {
+        letter-spacing: normal; }
+    .footer .communicate .icons {
+      display: grid;
+      grid-template-columns: repeat(3, 32px);
+      grid-gap: 30px;
+      margin-top: 16px;
+      -webkit-transition: fill 0.2s;
+      transition: fill 0.2s; }
+      @media screen and (max-width: 559px) {
+        .footer .communicate .icons {
+          grid-gap: 16px; } }
+      .footer .communicate .icons__link:hover .socialmedia-icon {
+        fill: #253757; }
+  .footer__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 125px; }
+  .footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-transform: uppercase;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%; }
+    @media screen and (max-width: 1299px) {
+      .footer__nav {
+        margin: 0; } }
+    .footer__nav .nav {
+      position: relative; }
+      .footer__nav .nav__logo {
+        margin-right: 78px;
+        z-index: 3; }
+        @media screen and (max-width: 619px) {
+          .footer__nav .nav__logo {
+            position: absolute;
+            top: -33px;
+            right: -73px; } }
+      .footer__nav .nav .logo__img {
+        width: 45px;
+        height: 26px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      .footer__nav .nav__list {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        @media screen and (max-width: 1299px) {
+          .footer__nav .nav__list {
+            display: none; } }
+      .footer__nav .nav__item {
+        position: relative;
+        margin-right: 64px; }
+        .footer__nav .nav__item:first-child {
+          margin-left: auto; }
+      .footer__nav .nav__link::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        border-radius: 4px;
+        background: #ff9c8e;
+        width: 0;
+        bottom: -8px;
+        left: 0;
+        -webkit-transition: width 0.3s;
+        transition: width 0.3s;
+        letter-spacing: normal; }
+      .footer__nav .nav__link:hover:after {
+        width: 100%; }
+
 .body {
   background: #eee; }
 
