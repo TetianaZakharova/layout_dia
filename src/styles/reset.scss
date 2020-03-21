@@ -25,6 +25,11 @@ a {
   color: #fff;
   text-align: center;
   letter-spacing: 3px;
+  outline: none;
+
+  &:focus {
+    color: #253757;
+  }
 }
 
 ul {

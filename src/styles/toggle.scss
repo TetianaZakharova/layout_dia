@@ -1,9 +1,10 @@
 @import "./vars.scss";
 
 .toggle {
-  &__mobile {
-    display: none;
-  }
+  // &__mobile {
+  //   // display: none;
+  //   visibility: hidden;
+  // }
 
   &__menu {
     opacity: 0;
@@ -21,9 +22,23 @@
     z-index: 3;
   }
 
-  &__list {
+  &__mobile {
     position: absolute;
-    top: 165px;
+    visibility: hidden;
+    top: -1000%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 100%;
+    width: 100%;
+    background-color: #008aff;
+    border-radius: 0 0 0 50px;
+    transition-duration: 0.5s;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 150px;
     left: 20%;
   }
 
@@ -31,7 +46,7 @@
     margin-bottom: 40px;
     &:last-child {
       position: relative;
-      margin-top: 160px;
+      margin-top: 40px;
       margin-bottom: 0;
 
       &::after {
@@ -56,16 +71,8 @@
   }
 
   &__menu:checked ~ .toggle__mobile {
-    display: block;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #008aff;
-    border-radius: 0 0 0 50px;
+    visibility: visible;
     top: 0;
-    left: 0;
-    z-index: 2;
-    transition: opacity 0.3s, transform 0.5s;
   }
 
   &__menu:checked ~ .info {
