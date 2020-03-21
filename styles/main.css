@@ -1643,6 +1643,14 @@ ul {
       line-height: 1.5;
       color: #fff;
       margin: 0; }
+    .footer .communicate .sublilte {
+      line-height: 19px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      opacity: 0.5;
+      margin: 0;
+      -webkit-transition: opacity 0.2s;
+      transition: opacity 0.2s; }
     .footer .communicate .form {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1722,15 +1730,13 @@ ul {
           margin-bottom: 0; } }
       .footer .communicate .contacts__call {
         margin-top: 56px; }
+        .footer .communicate .contacts__call:hover .sublilte {
+          opacity: 1; }
         @media screen and (max-width: 559px) {
           .footer .communicate .contacts__call {
             margin-top: 40px; } }
-    .footer .communicate .sublilte {
-      line-height: 19px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      opacity: 0.5;
-      margin: 0; }
+    .footer .communicate .visit:hover .sublilte {
+      opacity: 1; }
     .footer .communicate .contact {
       font-family: "Open Sans", sans-serif;
       font-style: normal;
@@ -1740,6 +1746,11 @@ ul {
       margin: 8px 0 48px; }
       .footer .communicate .contact__link {
         letter-spacing: normal; }
+    .footer .communicate .socials {
+      -webkit-transition: opacity, color, 1s;
+      transition: opacity, color, 1s; }
+      .footer .communicate .socials:hover .sublilte {
+        opacity: 1; }
     .footer .communicate .icons {
       display: grid;
       grid-template-columns: repeat(3, 32px);
