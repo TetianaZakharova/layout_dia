@@ -45,6 +45,15 @@
       margin: 0;
     }
 
+    .sublilte {
+      line-height: 19px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      opacity: 0.5;
+      margin: 0;
+      transition: opacity 0.2s;
+    }
+
     .form {
       display: flex;
       flex-direction: column;
@@ -123,18 +132,24 @@
       &__call {
         margin-top: 56px;
 
+        &:hover {
+          .sublilte {
+            opacity: 1;
+          }
+        }
+
         @media screen and (max-width: $screen-width-small) {
           margin-top: 40px;
         }
       }
     }
 
-    .sublilte {
-      line-height: 19px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      opacity: 0.5;
-      margin: 0;
+    .visit {
+      &:hover {
+        .sublilte {
+          opacity: 1;
+        }
+      }
     }
 
     .contact {
@@ -150,6 +165,15 @@
       }
     }
 
+    .socials {
+      transition: opacity, color, 1s;
+
+      &:hover {
+        .sublilte {
+          opacity: 1;
+        }
+      }
+    }
     .icons {
       display: grid;
       grid-template-columns: repeat(3, 32px);
