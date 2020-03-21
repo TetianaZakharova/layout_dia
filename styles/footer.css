@@ -66,8 +66,7 @@
         .footer .communicate .form__input::placeholder {
           color: #fff; }
         .footer .communicate .form__input:focus {
-          -webkit-box-shadow: 8px 8px 8px rgba(49, 59, 75, 0.19);
-                  box-shadow: 8px 8px 8px rgba(49, 59, 75, 0.19); }
+          border-bottom: 1px solid #253757; }
         .footer .communicate .form__input:hover {
           opacity: 1; }
       .footer .communicate .form__button {
@@ -85,6 +84,8 @@
         margin-top: 80px;
         -webkit-transition: color, background-color, 0.2s;
         transition: color, background-color, 0.2s; }
+        .footer .communicate .form__button:focus {
+          color: #253757; }
         @media screen and (max-width: 939px) {
           .footer .communicate .form__button {
             margin-top: 32px; } }
@@ -118,6 +119,7 @@
       margin: 0; }
     .footer .communicate .contact {
       font-family: "Open Sans", sans-serif;
+      font-style: normal;
       font-weight: 600;
       font-size: 24px;
       line-height: 1.5;
@@ -134,6 +136,8 @@
       @media screen and (max-width: 559px) {
         .footer .communicate .icons {
           grid-gap: 16px; } }
+      .footer .communicate .icons__link:focus .socialmedia-icon {
+        fill: #253757; }
       .footer .communicate .icons__link:hover .socialmedia-icon {
         fill: #253757; }
   .footer__bottom {
