@@ -63,6 +63,9 @@
         opacity: 0.7;
         -webkit-transition: opacity 0.2s;
         transition: opacity 0.2s; }
+        @media screen and (max-width: 939px) {
+          .footer .communicate .form__input {
+            width: 100%; } }
         .footer .communicate .form__input::-webkit-input-placeholder {
           color: #fff; }
         .footer .communicate .form__input::-moz-placeholder {

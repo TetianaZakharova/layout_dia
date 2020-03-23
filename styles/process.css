@@ -97,10 +97,8 @@
       font-size: 15px;
       line-height: 22px;
       color: #334563;
-      -webkit-transition: -webkit-transform 0.5s;
-      transition: -webkit-transform 0.5s;
-      transition: transform 0.5s;
-      transition: transform 0.5s, -webkit-transform 0.5s; }
+      -webkit-transition: color 0.2s;
+      transition: color 0.2s; }
       .process .item__link::before {
         content: "";
         width: 40px;
@@ -110,10 +108,10 @@
         background-position: center;
         background-repeat: no-repeat;
         background-color: #2060f6;
-        -webkit-transition: -webkit-transform 0.5s;
-        transition: -webkit-transform 0.5s;
-        transition: transform 0.5s;
-        transition: transform 0.5s, -webkit-transform 0.5s; }
+        -webkit-transition: -webkit-transform 0.2s;
+        transition: -webkit-transform 0.2s;
+        transition: transform 0.2s;
+        transition: transform 0.2s, -webkit-transform 0.2s; }
   .process .list {
     margin: 26px 0 32px; }
     .process .list__item {
@@ -132,6 +130,9 @@
 
 .item__theme--blue .item__link:hover {
   color: #56ccf2; }
+  .item__theme--blue .item__link:hover::before {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
 
 .item__theme--orange .item__number {
   color: #fcc91d;
@@ -142,6 +143,9 @@
 
 .item__theme--orange .item__link:hover {
   color: #fcc91d; }
+  .item__theme--orange .item__link:hover::before {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
 
 .item__theme--green .item__number {
   color: #15d850;
@@ -152,6 +156,9 @@
 
 .item__theme--green .item__link:hover {
   color: #15d850; }
+  .item__theme--green .item__link:hover::before {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
 
 .item__theme--purple .item__number {
   color: #f36363;
@@ -162,5 +169,8 @@
 
 .item__theme--purple .item__link:hover {
   color: #f36363; }
+  .item__theme--purple .item__link:hover::before {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
 
 /*# sourceMappingURL=process.css.map */
