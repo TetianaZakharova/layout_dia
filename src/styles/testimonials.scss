@@ -1,0 +1,139 @@
+@import "./vars.scss";
+
+.testimonials {
+  padding: 148px 150px;
+
+  @media screen and (max-width: $screen-width-test) {
+    padding: 50px;
+  }
+
+  &__container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  &__subtitle {
+    @extend %subtitle-styles;
+    color: #c0cdd7;
+  }
+
+  &__heading {
+    @extend %h2-styles;
+    line-height: 1.5;
+
+    @media screen and (max-width: $screen-width-small) {
+      font-size: 24px;
+    }
+  }
+
+  .base {
+    display: grid;
+    grid-template-columns: repeat(3, 314px);
+    justify-content: space-between;
+    grid-gap: 30px;
+
+    @media screen and (max-width: $screen-width-notebook) {
+      grid-template-columns: repeat(1, 50%);
+      grid-row-gap: 30px;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: $screen-width-small) {
+      grid-template-columns: repeat(1, 314px);
+    }
+  }
+
+  .person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+    border-radius: 24px;
+    padding: 87px 32px 32px;
+
+    &__avatar {
+      position: relative;
+      width: 140px;
+      height: 140px;
+      margin: 0 auto 82px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -32%;
+        width: 139px;
+        height: 56px;
+        border-radius: 500px;
+        transform: rotate(-60deg);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 58%;
+        left: 38%;
+        width: 139px;
+        height: 56px;
+        border-radius: 500px;
+        transform: rotate(-60deg);
+      }
+    }
+
+    &__photo {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      z-index: 2;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    &__review {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 1.5;
+      text-align: center;
+      color: #6c788b;
+      margin: 10px 0;
+    }
+
+    &__name {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      line-height: 1.5;
+      text-align: center;
+      color: #253757;
+      margin: 16px 0 4px;
+    }
+
+    &__company {
+      @extend %subtitle-styles;
+      color: #c0cdd7;
+      margin: 0;
+    }
+  }
+}
+
+@each $name, $color in $item-themes-color {
+  .person__theme--#{$name} {
+    .person__avatar::before {
+      background-color: $color;
+    }
+
+    .person__avatar::after {
+      background-color: $color;
+    }
+
+    .quotes {
+      fill: $color;
+    }
+  }
+}

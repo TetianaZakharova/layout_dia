@@ -1,7 +1,18 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "reset";
+@import "header";
+@import "./vars.scss";
+@import "./toggle.scss";
+@import "./about.scss";
+@import "./services.scss";
+@import "./process.scss";
+@import "./approach.scss";
+@import "./testimonials.scss";
+@import "./vision.scss";
+@import "./footer.scss";
 
-body {
+.body {
   background: $c-gray;
 }

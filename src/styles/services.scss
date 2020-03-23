@@ -1,0 +1,93 @@
+@import "./vars.scss";
+
+.services {
+  background-color: #fff;
+  padding: 128px 150px;
+
+  @media screen and (max-width: $screen-width-notebook) {
+    padding: 50px;
+  }
+
+  @media screen and (max-width: $screen-width-medium) {
+    padding: 50px 0;
+  }
+
+  &__container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 1.5;
+    color: #253757;
+    text-align: center;
+    margin: 0;
+
+    @media screen and (max-width: $screen-width-small) {
+      font-size: 42px;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 264px);
+    justify-content: space-between;
+    margin: 64px auto 0;
+
+    @media screen and (max-width: $screen-width-medium) {
+      grid-template-columns: 1fr;
+      row-gap: 48px;
+    }
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+      width: 186px;
+      height: 186px;
+      border-radius: 25px;
+      transition: transform 0.5s;
+
+      @media screen and (max-width: $screen-width-medium) {
+        // width: 90%;
+        width: 50%;
+        height: auto;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+
+        @media screen and (max-width: $screen-width-medium) {
+          transform: scale(1);
+        }
+      }
+    }
+
+    &__heading {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 140%;
+      color: #253757;
+      margin: 40px 0 16px;
+
+      @media screen and (max-width: $screen-width-medium) {
+        margin: 24px 0;
+      }
+
+    }
+
+    &__text {
+      @extend %info-text-process-servises;
+
+      @media screen and (max-width: $screen-width-medium) {
+        margin: 0;
+        width: 90%;
+      }
+    }
+  }
+}
