@@ -98,7 +98,7 @@
       font-size: 15px;
       line-height: 22px;
       color: #334563;
-      transition: transform 0.5s;
+      transition: color 0.2s;
 
       &::before {
         content: "";
@@ -109,7 +109,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-color: #2060f6;
-        transition: transform 0.5s;
+        transition: transform 0.2s;
       }
     }
   }
@@ -141,6 +141,10 @@
 
     .item__link:hover {
       color: $color;
+
+      &::before {
+        transform: scale(1.2);
+      }
     }
   }
 }

@@ -75,6 +75,10 @@
         opacity: 0.7;
         transition: opacity 0.2s;
 
+        @media screen and (max-width: $screen-width-medium) {
+          width: 100%;
+        }
+
         &::placeholder {
           color: #fff;
         }
